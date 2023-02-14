@@ -19,9 +19,12 @@
 		9BA2C66F299A80EF00598238 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C66E299A80EF00598238 /* TimerViewController.swift */; };
 		9BA2C671299A80FB00598238 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C670299A80FB00598238 /* ReportViewController.swift */; };
 		9BA2C673299A811100598238 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C672299A811100598238 /* CategoriesTableViewController.swift */; };
+		C8ADB3CD09E93D1366CE2311 /* Pods_TomatoTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2D6BB1AE1BF929849C9BDD /* Pods_TomatoTimer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3335900768AB0019A2101DE7 /* Pods-TomatoTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomatoTimer.debug.xcconfig"; path = "Target Support Files/Pods-TomatoTimer/Pods-TomatoTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		7004DC9367F47FFDF1F74D4F /* Pods-TomatoTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomatoTimer.release.xcconfig"; path = "Target Support Files/Pods-TomatoTimer/Pods-TomatoTimer.release.xcconfig"; sourceTree = "<group>"; };
 		9B3AAB95299A2D4F00A8D7BD /* TomatoTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomatoTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3AAB98299A2D4F00A8D7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B3AAB9A299A2D4F00A8D7BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		9BA2C66E299A80EF00598238 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		9BA2C670299A80FB00598238 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		9BA2C672299A811100598238 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		FA2D6BB1AE1BF929849C9BDD /* Pods_TomatoTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomatoTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ADB3CD09E93D1366CE2311 /* Pods_TomatoTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64B2BDAB66A8182D167B4E30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D6BB1AE1BF929849C9BDD /* Pods_TomatoTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B3AAB8C299A2D4F00A8D7BD = {
 			isa = PBXGroup;
 			children = (
 				9B3AAB97299A2D4F00A8D7BD /* TomatoTimer */,
 				9B3AAB96299A2D4F00A8D7BD /* Products */,
+				D8DACD1ADADC6D788A60930B /* Pods */,
+				64B2BDAB66A8182D167B4E30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,18 +86,43 @@
 				9B3AAB98299A2D4F00A8D7BD /* AppDelegate.swift */,
 				9B3AAB9A299A2D4F00A8D7BD /* SceneDelegate.swift */,
 				9B3AAB9E299A2D4F00A8D7BD /* Main.storyboard */,
-				9BA2C66E299A80EF00598238 /* TimerViewController.swift */,
-				9BA2C670299A80FB00598238 /* ReportViewController.swift */,
-				9BA2C672299A811100598238 /* CategoriesTableViewController.swift */,
-				9BA2C66C299A80A200598238 /* HomeViewController.swift */,
-				9BA2C666299A3DB500598238 /* TomatoTimerColor.swift */,
-				9BA2C66A299A435700598238 /* TTTabBarController.swift */,
-				9BA2C668299A40AA00598238 /* Extensions.swift */,
+				9B7A8DDC299B8B62004C165C /* ViewControllers */,
+				9B7A8DDD299B8B83004C165C /* Setting */,
 				9B3AABA1299A2D5700A8D7BD /* Assets.xcassets */,
 				9B3AABA3299A2D5700A8D7BD /* LaunchScreen.storyboard */,
 				9B3AABA6299A2D5700A8D7BD /* Info.plist */,
 			);
 			path = TomatoTimer;
+			sourceTree = "<group>";
+		};
+		9B7A8DDC299B8B62004C165C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BA2C66E299A80EF00598238 /* TimerViewController.swift */,
+				9BA2C670299A80FB00598238 /* ReportViewController.swift */,
+				9BA2C672299A811100598238 /* CategoriesTableViewController.swift */,
+				9BA2C66C299A80A200598238 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9B7A8DDD299B8B83004C165C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9BA2C666299A3DB500598238 /* TomatoTimerColor.swift */,
+				9BA2C66A299A435700598238 /* TTTabBarController.swift */,
+				9BA2C668299A40AA00598238 /* Extensions.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		D8DACD1ADADC6D788A60930B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3335900768AB0019A2101DE7 /* Pods-TomatoTimer.debug.xcconfig */,
+				7004DC9367F47FFDF1F74D4F /* Pods-TomatoTimer.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B3AABA9299A2D5700A8D7BD /* Build configuration list for PBXNativeTarget "TomatoTimer" */;
 			buildPhases = (
+				AE448DC2D4D1DAA71FA17911 /* [CP] Check Pods Manifest.lock */,
 				9B3AAB91299A2D4F00A8D7BD /* Sources */,
 				9B3AAB92299A2D4F00A8D7BD /* Frameworks */,
 				9B3AAB93299A2D4F00A8D7BD /* Resources */,
+				8D0AA4438789AC38D2AC86E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +192,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D0AA4438789AC38D2AC86E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TomatoTimer/Pods-TomatoTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TomatoTimer/Pods-TomatoTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TomatoTimer/Pods-TomatoTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE448DC2D4D1DAA71FA17911 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TomatoTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B3AAB91299A2D4F00A8D7BD /* Sources */ = {
@@ -306,6 +390,7 @@
 		};
 		9B3AABAA299A2D5700A8D7BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3335900768AB0019A2101DE7 /* Pods-TomatoTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +404,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +420,7 @@
 		};
 		9B3AABAB299A2D5700A8D7BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7004DC9367F47FFDF1F74D4F /* Pods-TomatoTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,6 +434,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
