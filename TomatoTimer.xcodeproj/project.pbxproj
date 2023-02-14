@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		9B3AAB99299A2D4F00A8D7BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3AAB98299A2D4F00A8D7BD /* AppDelegate.swift */; };
 		9B3AAB9B299A2D4F00A8D7BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3AAB9A299A2D4F00A8D7BD /* SceneDelegate.swift */; };
-		9B3AAB9D299A2D4F00A8D7BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3AAB9C299A2D4F00A8D7BD /* ViewController.swift */; };
 		9B3AABA0299A2D4F00A8D7BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3AAB9E299A2D4F00A8D7BD /* Main.storyboard */; };
 		9B3AABA2299A2D5700A8D7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3AABA1299A2D5700A8D7BD /* Assets.xcassets */; };
 		9B3AABA5299A2D5700A8D7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3AABA3299A2D5700A8D7BD /* LaunchScreen.storyboard */; };
+		9BA2C667299A3DB500598238 /* TomatoTimerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C666299A3DB500598238 /* TomatoTimerColor.swift */; };
+		9BA2C669299A40AA00598238 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C668299A40AA00598238 /* Extensions.swift */; };
+		9BA2C66B299A435700598238 /* TTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C66A299A435700598238 /* TTTabBarController.swift */; };
+		9BA2C66D299A80A200598238 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C66C299A80A200598238 /* HomeViewController.swift */; };
+		9BA2C66F299A80EF00598238 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C66E299A80EF00598238 /* TimerViewController.swift */; };
+		9BA2C671299A80FB00598238 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C670299A80FB00598238 /* ReportViewController.swift */; };
+		9BA2C673299A811100598238 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C672299A811100598238 /* CategoriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B3AAB95299A2D4F00A8D7BD /* TomatoTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomatoTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3AAB98299A2D4F00A8D7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B3AAB9A299A2D4F00A8D7BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B3AAB9C299A2D4F00A8D7BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9B3AAB9F299A2D4F00A8D7BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B3AABA1299A2D5700A8D7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3AABA4299A2D5700A8D7BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B3AABA6299A2D5700A8D7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA2C666299A3DB500598238 /* TomatoTimerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoTimerColor.swift; sourceTree = "<group>"; };
+		9BA2C668299A40AA00598238 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9BA2C66A299A435700598238 /* TTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTabBarController.swift; sourceTree = "<group>"; };
+		9BA2C66C299A80A200598238 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9BA2C66E299A80EF00598238 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		9BA2C670299A80FB00598238 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		9BA2C672299A811100598238 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,14 @@
 			children = (
 				9B3AAB98299A2D4F00A8D7BD /* AppDelegate.swift */,
 				9B3AAB9A299A2D4F00A8D7BD /* SceneDelegate.swift */,
-				9B3AAB9C299A2D4F00A8D7BD /* ViewController.swift */,
 				9B3AAB9E299A2D4F00A8D7BD /* Main.storyboard */,
+				9BA2C66E299A80EF00598238 /* TimerViewController.swift */,
+				9BA2C670299A80FB00598238 /* ReportViewController.swift */,
+				9BA2C672299A811100598238 /* CategoriesTableViewController.swift */,
+				9BA2C66C299A80A200598238 /* HomeViewController.swift */,
+				9BA2C666299A3DB500598238 /* TomatoTimerColor.swift */,
+				9BA2C66A299A435700598238 /* TTTabBarController.swift */,
+				9BA2C668299A40AA00598238 /* Extensions.swift */,
 				9B3AABA1299A2D5700A8D7BD /* Assets.xcassets */,
 				9B3AABA3299A2D5700A8D7BD /* LaunchScreen.storyboard */,
 				9B3AABA6299A2D5700A8D7BD /* Info.plist */,
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3AAB9D299A2D4F00A8D7BD /* ViewController.swift in Sources */,
+				9BA2C669299A40AA00598238 /* Extensions.swift in Sources */,
+				9BA2C667299A3DB500598238 /* TomatoTimerColor.swift in Sources */,
 				9B3AAB99299A2D4F00A8D7BD /* AppDelegate.swift in Sources */,
+				9BA2C66F299A80EF00598238 /* TimerViewController.swift in Sources */,
+				9BA2C671299A80FB00598238 /* ReportViewController.swift in Sources */,
 				9B3AAB9B299A2D4F00A8D7BD /* SceneDelegate.swift in Sources */,
+				9BA2C66D299A80A200598238 /* HomeViewController.swift in Sources */,
+				9BA2C66B299A435700598238 /* TTTabBarController.swift in Sources */,
+				9BA2C673299A811100598238 /* CategoriesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

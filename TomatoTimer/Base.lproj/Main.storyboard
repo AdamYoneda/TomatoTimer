@@ -1,24 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jim-Dm-9nv">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Report View Controller-->
+        <scene sceneID="1vy-Oi-hqt">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="QHh-N8-KhH" userLabel="Report View Controller" customClass="ReportViewController" customModule="TomatoTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H9r-2U-fIs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="Z7W-Wr-kTY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Report" id="gLu-IW-nal">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CSD-wD-tE6"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWC-Mn-Ptt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1657.2519083969464" y="794.36619718309862"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="6K1-z1-3CT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vs3-71-txo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Report" image="chart.bar.xaxis" catalog="system" id="g9A-8O-yGL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FYw-BY-WnQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QHh-N8-KhH" kind="relationship" relationship="rootViewController" id="XtQ-3D-Uqd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdG-SH-RGs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730.53435114503816" y="794.36619718309862"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="03L-K2-0Xg">
+            <objects>
+                <viewController id="boQ-G4-rJS" userLabel="Timer View Controller" customClass="TimerViewController" customModule="TomatoTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YPK-hx-mtq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qgk-qz-oG4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Timer" id="f4K-i7-bk6">
+                        <barButtonItem key="rightBarButtonItem" title="Setting" image="gearshape.fill" catalog="system" id="sfW-2s-KvE"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLE-Rn-D5D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3333.5877862595416" y="295.77464788732397"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="Dop-ir-69t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TCd-y9-WbT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Timer" image="clock.fill" catalog="system" id="mkL-rJ-Lsz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q5D-RW-ZbK">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="boQ-G4-rJS" kind="relationship" relationship="rootViewController" id="Vi7-JO-cHW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdb-zh-qsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2408.3969465648852" y="295.77464788732397"/>
+        </scene>
+        <!--Categories Table View Controller-->
+        <scene sceneID="g5d-Ph-fXW">
+            <objects>
+                <tableViewController id="QHB-PV-712" userLabel="Categories Table View Controller" customClass="CategoriesTableViewController" customModule="TomatoTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="flz-Ng-AZP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ztP-bG-Git">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ztP-bG-Git" id="ZRp-cc-4cL">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QHB-PV-712" id="7uV-8K-27l"/>
+                            <outlet property="delegate" destination="QHB-PV-712" id="dMw-rA-3Qh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Categories" id="Svs-gA-RnS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jQ3-IU-7z1"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r44-vt-vT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="K9x-ah-rBy">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </navigationBar>
+            </objects>
+            <point key="canvasLocation" x="3333.5877862595416" y="-407.04225352112678"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="nNX-Oj-Qom">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E0w-NR-j4Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Categories" image="list.bullet" catalog="system" id="49j-7B-DLA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KqI-ez-qa5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QHB-PV-712" kind="relationship" relationship="rootViewController" id="R7V-BE-MOO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mh2-DU-Tuv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2406.8702290076335" y="-407.04225352112678"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Ble-9H-f8H">
+            <objects>
+                <viewController id="Bg7-cF-Q0G" userLabel="Home View Controller" customClass="HomeViewController" customModule="TomatoTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oyi-UJ-1Ny">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OaY-co-sdO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="9ry-6Z-pLk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIj-5X-ArM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657.2519083969464" y="-938.0281690140846"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Gxa-R0-bxz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jdl-pZ-QLh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="MvX-ds-84G"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fmf-Cm-xyg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bg7-cF-Q0G" kind="relationship" relationship="rootViewController" id="Ika-UY-Pdk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJW-qT-O7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731" y="-938"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1i4-TW-wO6">
+            <objects>
+                <tabBarController id="jim-Dm-9nv" customClass="TTTabBarController" customModule="TomatoTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NGB-ZM-zz0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jdl-pZ-QLh" kind="relationship" relationship="viewControllers" id="xew-Nx-Lga"/>
+                        <segue destination="E0w-NR-j4Q" kind="relationship" relationship="viewControllers" id="GnI-9u-nSO"/>
+                        <segue destination="TCd-y9-WbT" kind="relationship" relationship="viewControllers" id="9EH-MB-D2B"/>
+                        <segue destination="Vs3-71-txo" kind="relationship" relationship="viewControllers" id="D3g-nH-KuS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fb6-2H-Nod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903" y="296"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart.bar.xaxis" catalog="system" width="32" height="32"/>
+        <image name="clock.fill" catalog="system" width="128" height="123"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
