@@ -6,24 +6,32 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class ReportViewController: UIViewController {
+class ReportViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
+        // ----------XLPagerTabStrip ButtonBarViewの設定---------- //
+        // 参照   https://qiita.com/KikurageChan/items/35593dc3aac8d694db8e
+        settings.style.buttonBarBackgroundColor = UIColor.white
+        settings.style.buttonBarItemBackgroundColor = TomatoTimerColor.tomatoButtonColor
+        settings.style.buttonBarItemTitleColor = UIColor.white
+        settings.style.selectedBarBackgroundColor = UIColor.gray
+        settings.style.buttonBarMinimumLineSpacing = 0.5
+        settings.style.buttonBarLeftContentInset = 0
+        settings.style.buttonBarRightContentInset = 0
+        settings.style.selectedBarHeight = 4.0
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        let calendarVC = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "Calendar")
+        let countdownVC = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "Count Down")
+        let childVCs:[UIViewController] = [calendarVC, countdownVC]
+        return childVCs
     }
-    */
 
 }

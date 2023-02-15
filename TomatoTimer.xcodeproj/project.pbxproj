@@ -19,6 +19,8 @@
 		9BA2C66F299A80EF00598238 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C66E299A80EF00598238 /* TimerViewController.swift */; };
 		9BA2C671299A80FB00598238 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C670299A80FB00598238 /* ReportViewController.swift */; };
 		9BA2C673299A811100598238 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C672299A811100598238 /* CategoriesTableViewController.swift */; };
+		9BAE1FCA299BE95F00A0FBB6 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE1FC9299BE95F00A0FBB6 /* CalendarViewController.swift */; };
+		9BAE1FCC299BEA3A00A0FBB6 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE1FCB299BEA3A00A0FBB6 /* CountDownViewController.swift */; };
 		C8ADB3CD09E93D1366CE2311 /* Pods_TomatoTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2D6BB1AE1BF929849C9BDD /* Pods_TomatoTimer.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		9BA2C66E299A80EF00598238 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		9BA2C670299A80FB00598238 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		9BA2C672299A811100598238 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		9BAE1FC9299BE95F00A0FBB6 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		9BAE1FCB299BEA3A00A0FBB6 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		FA2D6BB1AE1BF929849C9BDD /* Pods_TomatoTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomatoTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,8 +90,9 @@
 				9B3AAB98299A2D4F00A8D7BD /* AppDelegate.swift */,
 				9B3AAB9A299A2D4F00A8D7BD /* SceneDelegate.swift */,
 				9B3AAB9E299A2D4F00A8D7BD /* Main.storyboard */,
-				9B7A8DDC299B8B62004C165C /* ViewControllers */,
 				9B7A8DDD299B8B83004C165C /* Setting */,
+				9B7A8DDC299B8B62004C165C /* ViewControllers */,
+				9BAE1FC8299BE91900A0FBB6 /* ChildVCs */,
 				9B3AABA1299A2D5700A8D7BD /* Assets.xcassets */,
 				9B3AABA3299A2D5700A8D7BD /* LaunchScreen.storyboard */,
 				9B3AABA6299A2D5700A8D7BD /* Info.plist */,
@@ -114,6 +119,16 @@
 				9BA2C668299A40AA00598238 /* Extensions.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		9BAE1FC8299BE91900A0FBB6 /* ChildVCs */ = {
+			isa = PBXGroup;
+			children = (
+				9BAE1FC9299BE95F00A0FBB6 /* CalendarViewController.swift */,
+				9BAE1FCB299BEA3A00A0FBB6 /* CountDownViewController.swift */,
+			);
+			name = ChildVCs;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D8DACD1ADADC6D788A60930B /* Pods */ = {
@@ -240,11 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAE1FCA299BE95F00A0FBB6 /* CalendarViewController.swift in Sources */,
 				9BA2C669299A40AA00598238 /* Extensions.swift in Sources */,
 				9BA2C667299A3DB500598238 /* TomatoTimerColor.swift in Sources */,
 				9B3AAB99299A2D4F00A8D7BD /* AppDelegate.swift in Sources */,
 				9BA2C66F299A80EF00598238 /* TimerViewController.swift in Sources */,
 				9BA2C671299A80FB00598238 /* ReportViewController.swift in Sources */,
+				9BAE1FCC299BEA3A00A0FBB6 /* CountDownViewController.swift in Sources */,
 				9B3AAB9B299A2D4F00A8D7BD /* SceneDelegate.swift in Sources */,
 				9BA2C66D299A80A200598238 /* HomeViewController.swift in Sources */,
 				9BA2C66B299A435700598238 /* TTTabBarController.swift in Sources */,
