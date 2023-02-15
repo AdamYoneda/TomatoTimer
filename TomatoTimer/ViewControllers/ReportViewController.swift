@@ -13,7 +13,7 @@ class ReportViewController: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         // ----------XLPagerTabStrip ButtonBarViewの設定---------- //
         // 参照   https://qiita.com/KikurageChan/items/35593dc3aac8d694db8e
-        settings.style.buttonBarBackgroundColor = UIColor.white
+        settings.style.buttonBarBackgroundColor = UIColor.systemBackground
         settings.style.buttonBarItemBackgroundColor = TomatoTimerColor.tomatoButtonColor
         settings.style.buttonBarItemTitleColor = UIColor.white
         settings.style.selectedBarBackgroundColor = UIColor.gray
@@ -34,4 +34,13 @@ class ReportViewController: ButtonBarPagerTabStripViewController {
         return childVCs
     }
 
+    @IBAction func pressAddButton(_ sender: UIBarButtonItem) {
+        if let selectedViewController: UIViewController? = self.viewControllers[self.currentIndex] {
+            if selectedViewController is CalendarViewController {
+                print("Calendar")
+            } else if selectedViewController is CountDownViewController {
+                print("Count Down")
+            }
+        }
+    }
 }

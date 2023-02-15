@@ -215,8 +215,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mO2-Dv-Uj6" firstAttribute="leading" secondItem="Z7W-Wr-kTY" secondAttribute="leading" constant="30" id="1iD-Ye-FLK"/>
+                            <constraint firstItem="gWq-GA-5fQ" firstAttribute="top" secondItem="mO2-Dv-Uj6" secondAttribute="bottom" id="2GR-g4-SOt"/>
                             <constraint firstItem="Z7W-Wr-kTY" firstAttribute="trailing" secondItem="mO2-Dv-Uj6" secondAttribute="trailing" constant="30" id="4s4-lW-oE0"/>
-                            <constraint firstItem="gWq-GA-5fQ" firstAttribute="top" secondItem="mO2-Dv-Uj6" secondAttribute="bottom" id="Aqb-pp-bgR"/>
                             <constraint firstAttribute="bottom" secondItem="gWq-GA-5fQ" secondAttribute="bottom" id="MSP-aI-WAz"/>
                             <constraint firstAttribute="trailing" secondItem="gWq-GA-5fQ" secondAttribute="trailing" id="TEU-uh-cTr"/>
                             <constraint firstItem="gWq-GA-5fQ" firstAttribute="leading" secondItem="H9r-2U-fIs" secondAttribute="leading" id="ipl-42-kZo"/>
@@ -224,7 +224,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Report" id="gLu-IW-nal">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CSD-wD-tE6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CSD-wD-tE6">
+                            <connections>
+                                <action selector="pressAddButton:" destination="QHh-N8-KhH" id="h3z-2j-5sT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="buttonBarView" destination="mO2-Dv-Uj6" id="6SV-Us-yFE"/>
