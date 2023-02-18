@@ -35,12 +35,25 @@ class ReportViewController: ButtonBarPagerTabStripViewController {
     }
 
     @IBAction func pressAddButton(_ sender: UIBarButtonItem) {
-        if let selectedViewController: UIViewController? = self.viewControllers[self.currentIndex] {
-            if selectedViewController is CalendarViewController {
-                print("Calendar")
-            } else if selectedViewController is CountDownViewController {
-                print("Count Down")
+        let selectedViewController = self.viewControllers[currentIndex]
+        if selectedViewController is CalendarViewController {
+            let calendarModalVC = CalendarModalViewController()
+            if let sheet = calendarModalVC.sheetPresentationController {
+                sheet.detents = [.medium(), .large()]
+                sheet.prefersGrabberVisible = true
+                sheet.preferredCornerRadius = 40.0
             }
+            present(calendarModalVC, animated: true, completion: nil)
+        } else if selectedViewController is CountDownViewController {
+            let countdownModalVC = CountDownModalViewController()
+            if let sheet = countdownModalVC.sheetPresentationController {
+                sheet.detents = [.medium(), .large()]
+                sheet.prefersGrabberVisible = true
+                sheet.preferredCornerRadius = 40.0
+            }
+            present(countdownModalVC, animated: true, completion: nil)
         }
+        
     }
 }
+ 

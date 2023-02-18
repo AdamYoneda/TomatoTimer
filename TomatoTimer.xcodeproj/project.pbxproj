@@ -12,6 +12,9 @@
 		9B3AABA0299A2D4F00A8D7BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3AAB9E299A2D4F00A8D7BD /* Main.storyboard */; };
 		9B3AABA2299A2D5700A8D7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3AABA1299A2D5700A8D7BD /* Assets.xcassets */; };
 		9B3AABA5299A2D5700A8D7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3AABA3299A2D5700A8D7BD /* LaunchScreen.storyboard */; };
+		9B9355E7299FE9CB0013C02D /* CalendarModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9355E6299FE9CB0013C02D /* CalendarModalViewController.swift */; };
+		9B9355E9299FE9DF0013C02D /* CountDownModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9355E8299FE9DF0013C02D /* CountDownModalViewController.swift */; };
+		9B93560C29A098DA0013C02D /* CategoryModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93560B29A098DA0013C02D /* CategoryModalViewController.swift */; };
 		9BA2C667299A3DB500598238 /* TomatoTimerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C666299A3DB500598238 /* TomatoTimerColor.swift */; };
 		9BA2C669299A40AA00598238 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C668299A40AA00598238 /* Extensions.swift */; };
 		9BA2C66B299A435700598238 /* TTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C66A299A435700598238 /* TTTabBarController.swift */; };
@@ -34,6 +37,9 @@
 		9B3AABA1299A2D5700A8D7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3AABA4299A2D5700A8D7BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B3AABA6299A2D5700A8D7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9355E6299FE9CB0013C02D /* CalendarModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModalViewController.swift; sourceTree = "<group>"; };
+		9B9355E8299FE9DF0013C02D /* CountDownModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownModalViewController.swift; sourceTree = "<group>"; };
+		9B93560B29A098DA0013C02D /* CategoryModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModalViewController.swift; sourceTree = "<group>"; };
 		9BA2C666299A3DB500598238 /* TomatoTimerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoTimerColor.swift; sourceTree = "<group>"; };
 		9BA2C668299A40AA00598238 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9BA2C66A299A435700598238 /* TTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTabBarController.swift; sourceTree = "<group>"; };
@@ -87,12 +93,10 @@
 		9B3AAB97299A2D4F00A8D7BD /* TomatoTimer */ = {
 			isa = PBXGroup;
 			children = (
-				9B3AAB98299A2D4F00A8D7BD /* AppDelegate.swift */,
-				9B3AAB9A299A2D4F00A8D7BD /* SceneDelegate.swift */,
-				9B3AAB9E299A2D4F00A8D7BD /* Main.storyboard */,
+				9B9355E0299F54E30013C02D /* Application */,
+				9B9355E1299F54F30013C02D /* Main */,
 				9B7A8DDD299B8B83004C165C /* Setting */,
 				9B7A8DDC299B8B62004C165C /* ViewControllers */,
-				9BAE1FC8299BE91900A0FBB6 /* ChildVCs */,
 				9B3AABA1299A2D5700A8D7BD /* Assets.xcassets */,
 				9B3AABA3299A2D5700A8D7BD /* LaunchScreen.storyboard */,
 				9B3AABA6299A2D5700A8D7BD /* Info.plist */,
@@ -107,6 +111,8 @@
 				9BA2C670299A80FB00598238 /* ReportViewController.swift */,
 				9BA2C672299A811100598238 /* CategoriesTableViewController.swift */,
 				9BA2C66C299A80A200598238 /* HomeViewController.swift */,
+				9B93560A29A098980013C02D /* HalfModal */,
+				9BAE1FC8299BE91900A0FBB6 /* ReportVC_ChildVCs */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -121,14 +127,41 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		9BAE1FC8299BE91900A0FBB6 /* ChildVCs */ = {
+		9B9355E0299F54E30013C02D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9B3AAB98299A2D4F00A8D7BD /* AppDelegate.swift */,
+				9B3AAB9A299A2D4F00A8D7BD /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9B9355E1299F54F30013C02D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9B3AAB9E299A2D4F00A8D7BD /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9B93560A29A098980013C02D /* HalfModal */ = {
+			isa = PBXGroup;
+			children = (
+				9B9355E6299FE9CB0013C02D /* CalendarModalViewController.swift */,
+				9B9355E8299FE9DF0013C02D /* CountDownModalViewController.swift */,
+				9B93560B29A098DA0013C02D /* CategoryModalViewController.swift */,
+			);
+			path = HalfModal;
+			sourceTree = "<group>";
+		};
+		9BAE1FC8299BE91900A0FBB6 /* ReportVC_ChildVCs */ = {
 			isa = PBXGroup;
 			children = (
 				9BAE1FC9299BE95F00A0FBB6 /* CalendarViewController.swift */,
 				9BAE1FCB299BEA3A00A0FBB6 /* CountDownViewController.swift */,
 			);
-			name = ChildVCs;
-			path = ..;
+			name = ReportVC_ChildVCs;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D8DACD1ADADC6D788A60930B /* Pods */ = {
@@ -257,6 +290,7 @@
 			files = (
 				9BAE1FCA299BE95F00A0FBB6 /* CalendarViewController.swift in Sources */,
 				9BA2C669299A40AA00598238 /* Extensions.swift in Sources */,
+				9B93560C29A098DA0013C02D /* CategoryModalViewController.swift in Sources */,
 				9BA2C667299A3DB500598238 /* TomatoTimerColor.swift in Sources */,
 				9B3AAB99299A2D4F00A8D7BD /* AppDelegate.swift in Sources */,
 				9BA2C66F299A80EF00598238 /* TimerViewController.swift in Sources */,
@@ -264,7 +298,9 @@
 				9BAE1FCC299BEA3A00A0FBB6 /* CountDownViewController.swift in Sources */,
 				9B3AAB9B299A2D4F00A8D7BD /* SceneDelegate.swift in Sources */,
 				9BA2C66D299A80A200598238 /* HomeViewController.swift in Sources */,
+				9B9355E9299FE9DF0013C02D /* CountDownModalViewController.swift in Sources */,
 				9BA2C66B299A435700598238 /* TTTabBarController.swift in Sources */,
+				9B9355E7299FE9CB0013C02D /* CalendarModalViewController.swift in Sources */,
 				9BA2C673299A811100598238 /* CategoriesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

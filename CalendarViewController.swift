@@ -17,6 +17,7 @@ class CalendarViewController: UIViewController, IndicatorInfoProvider {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.backgroundColor = .cyan
     }
     
     func indicatorInfo(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> XLPagerTabStrip.IndicatorInfo {

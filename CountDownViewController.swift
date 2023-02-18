@@ -16,6 +16,7 @@ class CountDownViewController: UIViewController, IndicatorInfoProvider {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.backgroundColor = .darkGray
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {

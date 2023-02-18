@@ -10,9 +10,8 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // 全てのTab Barの設定
@@ -31,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appearance.compactScrollEdgeAppearance = newNavBarAppearance
         }
         appearance.tintColor = UIColor.black
-        
         
         return true
     }

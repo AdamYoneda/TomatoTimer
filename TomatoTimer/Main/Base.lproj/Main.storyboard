@@ -107,7 +107,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Categories" id="Svs-gA-RnS">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jQ3-IU-7z1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jQ3-IU-7z1">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="QHB-PV-712" id="kVj-ST-vJF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r44-vt-vT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -182,6 +186,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWq-GA-5fQ">
+                                <rect key="frame" x="0.0" y="143" width="393" height="709"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1bI-wf-Zmj"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="5SR-AW-kY4"/>
+                            </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mO2-Dv-Uj6" customClass="ButtonBarView" customModule="XLPagerTabStrip">
                                 <rect key="frame" x="30" y="103" width="333" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -195,7 +204,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zkj-3n-cap">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Report Screen Tab" id="Zkj-3n-cap">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dOg-UT-waN">
@@ -205,22 +214,18 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWq-GA-5fQ">
-                                <rect key="frame" x="0.0" y="143" width="393" height="709"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="1bI-wf-Zmj"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="5SR-AW-kY4"/>
-                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z7W-Wr-kTY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mO2-Dv-Uj6" firstAttribute="leading" secondItem="Z7W-Wr-kTY" secondAttribute="leading" constant="30" id="1iD-Ye-FLK"/>
-                            <constraint firstItem="gWq-GA-5fQ" firstAttribute="top" secondItem="mO2-Dv-Uj6" secondAttribute="bottom" id="2GR-g4-SOt"/>
-                            <constraint firstItem="Z7W-Wr-kTY" firstAttribute="trailing" secondItem="mO2-Dv-Uj6" secondAttribute="trailing" constant="30" id="4s4-lW-oE0"/>
-                            <constraint firstAttribute="bottom" secondItem="gWq-GA-5fQ" secondAttribute="bottom" id="MSP-aI-WAz"/>
-                            <constraint firstAttribute="trailing" secondItem="gWq-GA-5fQ" secondAttribute="trailing" id="TEU-uh-cTr"/>
-                            <constraint firstItem="gWq-GA-5fQ" firstAttribute="leading" secondItem="H9r-2U-fIs" secondAttribute="leading" id="ipl-42-kZo"/>
-                            <constraint firstItem="mO2-Dv-Uj6" firstAttribute="top" secondItem="Z7W-Wr-kTY" secondAttribute="top" id="jIM-8l-IuY"/>
+                            <constraint firstItem="mO2-Dv-Uj6" firstAttribute="centerX" secondItem="H9r-2U-fIs" secondAttribute="centerX" id="4Ja-LQ-eLQ"/>
+                            <constraint firstItem="Z7W-Wr-kTY" firstAttribute="trailing" secondItem="mO2-Dv-Uj6" secondAttribute="trailing" constant="30" id="KFj-Ov-Z7m"/>
+                            <constraint firstItem="mO2-Dv-Uj6" firstAttribute="leading" secondItem="Z7W-Wr-kTY" secondAttribute="leading" constant="30" id="Pw2-dy-6bX"/>
+                            <constraint firstItem="gWq-GA-5fQ" firstAttribute="leading" secondItem="Z7W-Wr-kTY" secondAttribute="leading" id="QgT-oV-oBV"/>
+                            <constraint firstItem="mO2-Dv-Uj6" firstAttribute="top" secondItem="Z7W-Wr-kTY" secondAttribute="top" id="ZDr-GY-L1h"/>
+                            <constraint firstAttribute="bottom" secondItem="gWq-GA-5fQ" secondAttribute="bottom" id="fdk-q6-a7J"/>
+                            <constraint firstItem="gWq-GA-5fQ" firstAttribute="trailing" secondItem="Z7W-Wr-kTY" secondAttribute="trailing" id="hzk-Se-WDp"/>
+                            <constraint firstItem="gWq-GA-5fQ" firstAttribute="top" secondItem="mO2-Dv-Uj6" secondAttribute="bottom" id="w9a-dW-s8P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Report" id="gLu-IW-nal">
